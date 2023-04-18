@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/base.css'
+import astronaut from '../assets/astronaut.png'
+import { Image } from '@astrojs/image/components'
+---
+
+<Layout title="Welcome to Astro.">
+	<nav class="flex justify-between bg-white rounded-full border-[1px] border-black my-10">
+		<h3 class="font-bold text-2xl font-comfortaa py-3 pl-6">Yagmi</h3>
+		<a href="/" class="font-medium text-lg font-work-sans py-3 pr-6" >Contact Us</a>
+	</nav>
+	<main class="flex justify-between">
+		<div class="flex flex-col max-w-[50%]">
+			<h1 class="font-chromate text-6xl">Welcome to YAGMI</h1>
+			<p class="font-work-sans">Lorem ipsum dolor sit amet consectetur. Mauris sit ornare sem turpis adipiscing senectus scelerisque nibh dolor. Velit lacinia donec dui in libero volutpat maecenas aliquet. A amet gravida quisque tellus.</p>
+			<a href="/" class="shadow-[0.5rem 0.5rem black]">Launch App</a>
+		</div>
+		<Image src={astronaut} alt="An astronaut in space" />
+	</main>
+</Layout>
