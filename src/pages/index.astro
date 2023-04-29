@@ -8,20 +8,30 @@ import ChevronDoubleDown from 'astro-heroicons/outline/ChevronDoubleDown.astro'
 ---
 
 <Layout title="Yagmi Project">
-	<div class="fixed -z-1 bg-[#F1FAFF] w-[60rem] h-[60rem] rounded-[50%] top-[-20vw] right-[-3vw]"/>
-	<nav class="flex justify-between bg-white rounded-full border-[1px] border-black my-10 w-full z-0">
-		<h3 class="font-bold text-2xl font-comfortaa py-3 pl-6">Yagmi</h3>
+	<div class='fixed min-h-screen min-w-full grid-background'/>
+	<div class="top-0 left-0 fixed z-0">
+		<svg width="408" height="424" viewBox="0 0 408 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M200.061 -71.3779C243.751 -38.5279 292.698 -14.2189 325.219 29.1431C357.741 72.505 373.837 134.263 356.098 184.195C338.359 233.799 286.456 271.576 234.553 281.103C182.979 290.958 131.076 272.89 86.3998 263.364C41.7238 253.509 3.94637 252.523 -45.6571 242.011C-95.5891 231.828 -157.676 212.118 -180.671 172.698C-203.337 133.278 -186.912 73.819 -166.874 16.66C-146.507 -40.4989 -122.526 -95.0299 -80.8066 -128.208C-39.4156 -161.715 20.0429 -173.541 68.9893 -159.087C117.936 -144.962 156.37 -103.899 200.061 -71.3779Z" fill="#E9F7FF"/>
+		</svg>
+	</div>
+	<div class="top-0 right-0 fixed z-0">
+		<svg width="650" height="506" viewBox="0 0 650 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M619.475 -55.6519C688.502 -3.75194 765.833 34.6541 817.214 103.162C868.595 171.67 894.026 269.242 866 348.13C837.974 426.499 755.972 486.184 673.97 501.235C592.487 516.805 510.485 488.26 439.901 473.209C369.317 457.639 309.632 456.082 231.263 439.474C152.375 423.385 54.2837 392.245 17.9537 329.965C-17.8573 267.685 8.0927 173.746 39.7517 83.4401C71.9297 -6.86595 109.817 -93.0199 175.73 -145.439C241.124 -198.377 335.063 -217.061 412.394 -194.225C489.725 -171.908 550.448 -107.033 619.475 -55.6519Z" fill="#E9F7FF"/>
+		</svg>
+	</div>
+	<nav class="flex justify-between bg-white rounded-full border-[1px] border-black my-10 w-full relative z-100">
+		<h3 class="text-2xl font-chromate py-3 pl-6">YAGMI</h3>
 		<a href="/" class="font-medium text-lg font-work-sans py-3 pr-6 mt-[0.1rem]">Contact Us</a>
 	</nav>
-	<main class="flex justify-between min-h-[75vh] items-center z-0">
+	<main class="flex justify-between min-h-[75vh] items-center relative z-100">
 		<div class="flex flex-col max-w-[50%] pb-20">
-			<h1 class="font-chromate text-6xl mb-5">Welcome to YAGMI</h1>
-			<p class="font-work-sans mb-5 text-lg">Lorem ipsum dolor sit amet consectetur. Mauris sit ornare sem turpis adipiscing senectus scelerisque nibh dolor. Velit lacinia donec dui in libero volutpat maecenas aliquet. A amet gravida quisque tellus.</p>
-			<Button href="/" styles='self-start px-8 py-2'>Launch App</Button>
+			<h1 class="font-chromate text-6xl mb-8">Welcome to YAGMI</h1>
+			<p class="font-work-sans mb-6 text-lg">Revolutionize crowdfunding with our profit-driven platform, challenging the over-collateralized blockchain norm. We provide under-collateralized loans to promising DAO members, enabling them to create more value. Join us, invest in exceptional individuals, and enjoy steady, sustainable returns.</p>
+			<Button href="/" styles='self-start px-6 py-2'>Launch App</Button>
 		</div>
 		<Image src={astronaut} alt="An astronaut in space" class="mr-4"/>
 	</main>
-	<a href="/" class="z-0">
-		<ChevronDoubleDown width='1rem' height='1rem'/>
+	<a href="/" class="relative z-100">
+		<ChevronDoubleDown width='2rem' height='2rem'/>
 	</a>
 </Layout>

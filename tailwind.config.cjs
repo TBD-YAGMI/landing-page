@@ -5,7 +5,6 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				chromate: ['Chromate', 'serif'],
-				comfortaa: ['Comfortaa', 'cursive'],
 				'work-sans': ['Work Sans', 'sans-serif'],
 			},
 			colors: {
