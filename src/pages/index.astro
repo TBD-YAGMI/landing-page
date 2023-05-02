@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
+import IconBox from '../components/IconBox.astro'
 import '../styles/base.css'
 import astronaut from '../assets/astronaut.png'
 import student from '../assets/student.png'
@@ -9,7 +10,7 @@ import ChevronDoubleDown from 'astro-heroicons/outline/ChevronDoubleDown.astro'
 ---
 
 <Layout title="Yagmi Project">
-	<div class='fixed min-h-screen min-w-full grid-background'/>
+	<div class='fixed min-h-screen min-w-full grid-background'></div>
 	<div class="top-0 left-0 absolute z-0">
 		<svg width="408" height="424" viewBox="0 0 408 424" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M200.061 -71.3779C243.751 -38.5279 292.698 -14.2189 325.219 29.1431C357.741 72.505 373.837 134.263 356.098 184.195C338.359 233.799 286.456 271.576 234.553 281.103C182.979 290.958 131.076 272.89 86.3998 263.364C41.7238 253.509 3.94637 252.523 -45.6571 242.011C-95.5891 231.828 -157.676 212.118 -180.671 172.698C-203.337 133.278 -186.912 73.819 -166.874 16.66C-146.507 -40.4989 -122.526 -95.0299 -80.8066 -128.208C-39.4156 -161.715 20.0429 -173.541 68.9893 -159.087C117.936 -144.962 156.37 -103.899 200.061 -71.3779Z" fill="#E9F7FF"/>
@@ -28,7 +29,7 @@ import ChevronDoubleDown from 'astro-heroicons/outline/ChevronDoubleDown.astro'
 		<div class="flex justify-between min-h-[70vh] items-center">
 			<div class="flex flex-col max-w-[50%] pb-20">
 				<h1 class="font-chromate text-6xl mb-8">Welcome to YAGMI</h1>
-				<p class="font-work-sans mb-6 text-lg">Revolutionize crowdfunding with our profit-driven platform, challenging the over-collateralized blockchain norm. We provide under-collateralized loans to promising DAO members, enabling them to create more value. Join us, invest in exceptional individuals, and enjoy steady, sustainable returns.</p>
+				<p class="font-work-sans mb-8 text-lg">Revolutionize crowdfunding with our profit-driven platform, challenging the over-collateralized blockchain norm. We provide under-collateralized loans to promising DAO members, enabling them to create more value. Join us, invest in exceptional individuals, and enjoy steady, sustainable returns.</p>
 				<Button href="/" styles='self-start px-6 py-2'>Launch App</Button>
 			</div>
 			<Image src={astronaut} alt="An astronaut in space" class="mr-4"/>
@@ -50,5 +51,16 @@ import ChevronDoubleDown from 'astro-heroicons/outline/ChevronDoubleDown.astro'
 				<Image src={student} alt="A graduating student" />
 			</div>
 		</div>
+	</section>
+	<section class="flex flex-col w-full max-w-[80%] min-h-screen items-center justify-evenly relative z-100">
+		<h2 class="font-chromate text-6xl">DAOs we work with!</h2>
+		<div class="flex items-center justify-evenly w-full">
+			<IconBox symbol="?" title="Lorem Ipsum"/>
+			<IconBox symbol="!" title="Lorem Ipsum"/>
+			<IconBox symbol="%" title="Lorem Ipsum"/>
+			<IconBox symbol="$" title="Lorem Ipsum"/>
+			<IconBox symbol="#" title="Lorem Ipsum"/>
+		</div>
+		<Button href="/" styles='px-8 py-2'>Sign up with your DAO</Button>
 	</section>
 </Layout>
