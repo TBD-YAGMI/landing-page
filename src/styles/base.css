@@ -6,7 +6,7 @@
 
 @font-face {
 	font-family: 'Chromate';
-	src: url('/fonts/Chromate-Regular.otf');
+	src: url('/fonts/Chromate-Regular.woff2');
 }
 
 @layer components {
