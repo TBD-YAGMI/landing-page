@@ -89,7 +89,7 @@ export default function Accordion() {
 							ref={buttonThree}
 						>
 							<h3 className="font-work-sans text-lg font-medium">
-								What are the DAO's options for overdue debt payments?
+								What are a DAO's options for overdue debt payments?
 							</h3>
 							<ChevronDownIcon
 								className={`h-5 w-5 text-black ${
@@ -99,10 +99,10 @@ export default function Accordion() {
 						</Disclosure.Button>
 						<Disclosure.Panel className="bg-[#F6F6F6] px-7 pb-7 border-b-[1px] border-black">
 							<p className="font-work-sans pt-4 border-t-[1px] border-dashed border-black">
-								The DAO has two options for overdue debt payments. They can
-								either surrender their collateral, allowing users to recoup a
-								portion of their investment at the expense of the DAO's future
-								credit for champions and impacting its reputation, or settle the
+								A DAO has two options for overdue debt payments. They can either
+								surrender their collateral, allowing users to recoup a portion
+								of their investment at the expense of the DAO's future credit
+								for champions and impacting its reputation, or settle the
 								outstanding debt to maintain the DAO's earned credit.
 							</p>
 						</Disclosure.Panel>
