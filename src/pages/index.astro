@@ -15,21 +15,21 @@ import { Icon } from 'astro-icon'
 
 <Layout title="Yagmi Project">
 	<div class='fixed min-h-screen min-w-full grid-background'></div>
-	<div class="top-0 left-0 absolute z-0">
+	<div class="top-0 left-0 absolute">
 		<svg width="408" height="424" viewBox="0 0 408 424" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M200.061 -71.3779C243.751 -38.5279 292.698 -14.2189 325.219 29.1431C357.741 72.505 373.837 134.263 356.098 184.195C338.359 233.799 286.456 271.576 234.553 281.103C182.979 290.958 131.076 272.89 86.3998 263.364C41.7238 253.509 3.94637 252.523 -45.6571 242.011C-95.5891 231.828 -157.676 212.118 -180.671 172.698C-203.337 133.278 -186.912 73.819 -166.874 16.66C-146.507 -40.4989 -122.526 -95.0299 -80.8066 -128.208C-39.4156 -161.715 20.0429 -173.541 68.9893 -159.087C117.936 -144.962 156.37 -103.899 200.061 -71.3779Z" fill="#E9F7FF"/>
 		</svg>
 	</div>
-	<div class="top-0 right-0 absolute z-0">
+	<div class="top-0 right-0 absolute">
 		<svg width="650" height="506" viewBox="0 0 650 506" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M619.475 -55.6519C688.502 -3.75194 765.833 34.6541 817.214 103.162C868.595 171.67 894.026 269.242 866 348.13C837.974 426.499 755.972 486.184 673.97 501.235C592.487 516.805 510.485 488.26 439.901 473.209C369.317 457.639 309.632 456.082 231.263 439.474C152.375 423.385 54.2837 392.245 17.9537 329.965C-17.8573 267.685 8.0927 173.746 39.7517 83.4401C71.9297 -6.86595 109.817 -93.0199 175.73 -145.439C241.124 -198.377 335.063 -217.061 412.394 -194.225C489.725 -171.908 550.448 -107.033 619.475 -55.6519Z" fill="#E9F7FF"/>
 		</svg>
 	</div>
-	<header class="flex justify-between items-center bg-white rounded-2xl border-[1px] border-black my-10 w-full relative z-100 max-w-[80%] py-3 px-5">
+	<header class="flex justify-between items-center bg-white rounded-2xl border-[1px] border-black my-10 w-full relative max-w-[80%] py-3 px-5">
 		<h3 class="text-2xl font-chromate ml-1">YAGMI</h3>
 		<a href="/" class="font-work-sans font-medium border-black border-[1px] rounded-lg px-4 py-1 text-white bg-black">Contact Us</a>
 	</header>
-	<main class="flex flex-col min-h-screen items-center relative z-100 mx-[10%]">
+	<main class="flex flex-col min-h-screen items-center relative mx-[10%]">
 		<div class="flex justify-between min-h-[70vh] items-center">
 			<div class="flex flex-col max-w-[50%] pb-20">
 				<h1 class="font-chromate text-6xl mb-8">Welcome to YAGMI</h1>
@@ -42,7 +42,7 @@ import { Icon } from 'astro-icon'
 			<ChevronDoubleDown width='2rem' height='2rem'/>
 		</a>
 	</main>
-	<section class="flex flex-col justify-center min-h-screen min-w-full relative z-100" id='achieving'>
+	<section class="flex flex-col justify-center min-h-screen min-w-full relative" id='achieving'>
 		<div class="flex max-h-[80%] border-y-2 border-black">
 			<div class='flex flex-col min-w-[50%] bg-[#00A4FF] border-r-2 border-black pl-20 pr-40'>
 				<h2 class="font-chromate text-6xl mt-12">Achieving <h2 class="font-chromate text-6xl mt-5">more together</h2></h2></h2>
@@ -56,7 +56,7 @@ import { Icon } from 'astro-icon'
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col w-full max-w-[80%] min-h-screen items-center justify-evenly relative z-100">
+	<section class="flex flex-col w-full max-w-[80%] min-h-screen items-center justify-evenly relative">
 		<h2 class="font-chromate text-6xl">DAOs we work with!</h2>
 		<div class="flex items-center justify-evenly w-full">
 			<IconBox symbol="?" title="Lorem Ipsum"/>
@@ -67,7 +67,7 @@ import { Icon } from 'astro-icon'
 		</div>
 		<Button href="/#signup" styles='px-8 py-2'>Sign up with your DAO</Button>
 	</section>
-	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen relative z-100">
+	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen relative">
 		<Card styles="bg-[#B8E1F8] mr-[1%]" title="01">
 			<span class="font-semibold">Select</span> a reputable DAO you're familiar with
 		</Card>
@@ -81,7 +81,7 @@ import { Icon } from 'astro-icon'
 			Check for available withdrawals, and retrieve your initial investment along with <span class="font-semibold">earned interest</span>
 		</Card>
 	</section>
-	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen relative z-100" id='signup'>
+	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen relative" id='signup'>
 		<div class="relative w-full min-h-[70vh]">
 			<div class="absolute inset-0 bg-white opacity-60"></div>
 			<div class="absolute top-0 left-0">
@@ -107,11 +107,11 @@ import { Icon } from 'astro-icon'
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col items-center justify-center w-full max-w-[80%] relative z-100 my-[5vh]">
+	<section class="flex flex-col items-center justify-center w-full max-w-[80%] relative my-[5vh]">
 		<h2 class="font-chromate text-5xl mb-7">FAQs</h2>	
 		<Accordion client:idle />
 	</section>
-	<section class="flex flex-col w-full relative z-100 min-h-[60vh] pt-20">
+	<section class="flex flex-col w-full relative min-h-[60vh] pt-20">
 		<div class="flex justify-evenly min-h-full bg-[#D6EBF6] py-14">
 			<div class="flex flex-col w-full max-w-[20%] p-5">
 				<span class="font-work-sans font-semibold mb-5">Placeholder 01</span>
