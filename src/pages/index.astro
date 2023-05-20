@@ -1,15 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.astro';
-import IconBox from '../components/IconBox.astro'
-import Card from '../components/Card.astro'
-import Accordion from '../components/Accordion.jsx'
+import Layout from '../layouts/Layout.astro'
+import { Accordion, Button, Card, Form, IconBox } from '../components'
 import '../styles/base.css'
 import astronaut from '../assets/astronaut.png'
 import student from '../assets/student.png'
 import { Image } from '@astrojs/image/components'
 import ChevronDoubleDown from 'astro-heroicons/outline/ChevronDoubleDown.astro'
-import ArrowRight from 'astro-heroicons/outline/ArrowRight.astro'
+import ArrowRight from 'astro-heroicons/outline/ArrowRight.astro';
 import { Icon } from 'astro-icon'
 ---
 
@@ -97,12 +94,9 @@ import { Icon } from 'astro-icon'
 			<div class="relative flex flex-col items-center justify-evenly min-h-[70vh]">
 				<h2 class="font-chromate text-5xl -mb-6">Are you a DAO member or contributor?</h2>
 				<p class="font-work-sans text-lg text-center mx-52">While we're currently in alpha and not accepting new organizations, we eagerly anticipate expanding our reach in the future. To qualify, organizations must demonstrate a robust decentralized voting system that rewards exceptional talent within the community. If your organization fosters individual growth through such a system, join our waitlist to stay updated on our progress!</p>
-				<form class="flex items-center -mt-8">
-					<input class='bg-white w-[18rem] h-14 border-black border-2 font-work-sans text-[#8E8D8D] text-xl pl-6 rounded-none mr-6 focus:outline-none' type="text" placeholder="Enter your email">
-					<button class="flex items-center justify-center bg-primary w-24 h-14 border-black border-2">
-						<ArrowRight width='1.5rem' height='1.5rem'/>
-					</button>
-				</form>
+				<Form client:idle>
+					<ArrowRight width="1.5rem" height="1.5rem" />
+				</Form>
 				<div class="min-w-[12rem] border-black border-2 mt-5"></div>
 			</div>
 		</div>
