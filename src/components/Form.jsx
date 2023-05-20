@@ -6,11 +6,32 @@ export default function Form({ children }) {
 
 	async function handleSubmit(e) {
 		e.preventDefault();
-		if (!sentEmail) {
-			const res = await fetch(
-				'https://uezouarwtqiugutkmlaa.supabase.co/rest/v1',
-				{ method: 'POST' }
-			);
+		if (!sentEmail && email !== '') {
+			try {
+				const res = await fetch(
+					'https://uezouarwtqiugutkmlaa.supabase.co/rest/v1/emails',
+					{
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+							apikey: import.meta.env.PUBLIC_SUPABASE_API_KEY,
+							authorization: `Bearer ${
+								import.meta.env.PUBLIC_SUPABASE_API_KEY
+							}`,
+						},
+						body: JSON.stringify({
+							email: email,
+						}),
+					}
+				);
+
+				if (!res.ok) {
+					throw new Error(`HTTP error, status: ${res.status}`);
+				}
+			} catch (error) {
+				console.log(error);
+			}
+
 			setEmail('');
 			setSentEmail(true);
 		}
