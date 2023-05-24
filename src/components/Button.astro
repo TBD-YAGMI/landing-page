@@ -6,6 +6,6 @@ export interface Props {
 
 const { href, styles } = Astro.props;
 ---
-<a href={href} class={`bg-primary font-medium font-work-sans shadow-[0.3rem_0.4rem_black] border-black border-2 transition duration-200 ease-in-out transform hover:shadow-sm hover:translate-y-1 ${styles} `}>
+<a href={href} class={`bg-yagmi-pink font-medium font-work-sans shadow-[0.3rem_0.4rem_white] border-black border-[1px] transition duration-200 ease-in-out transform hover:shadow-sm hover:translate-y-1 text-black ${styles} `}>
 	<slot/>
 </a>
