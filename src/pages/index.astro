@@ -11,12 +11,11 @@ import { Icon } from 'astro-icon'
 ---
 
 <Layout title="YAGMI">
-	<div class='fixed min-h-screen min-w-full'></div>
-		<header class="flex justify-between items-center bg-white rounded-2xl border-[1px] border-black my-10 w-full relative max-w-[80%] py-3 px-5">
+	<header class="flex justify-between items-center bg-white rounded-2xl border-[1px] border-black my-10 w-full max-w-[80%] py-3 px-5">
 		<h3 class="text-2xl font-chromate ml-1">YAGMI</h3>
 		<a href="mailto:yagmi.finance@gmail.com?subject=Hey frens!" class="font-work-sans font-medium border-black border-[1px] rounded-lg px-2 py-[0.25px] text-lg bg-white">Contact Us</a>
 	</header>
-	<main class="flex flex-col min-h-screen items-center relative mx-[10%]">
+	<main class="flex flex-col min-h-screen items-center mx-[10%]">
 		<div class="flex justify-between min-h-[70vh] items-center">
 			<div class="flex flex-col max-w-[50%] pb-20">
 				<h1 class="font-chromate text-6xl mb-8 text-white">Welcome to YAGMI</h1>
@@ -29,7 +28,7 @@ import { Icon } from 'astro-icon'
 			<ChevronDoubleDown width='2rem' height='2rem'/>
 		</a>
 	</main>
-	<section class="flex flex-col justify-center min-h-screen min-w-full relative" id='achieving'>
+	<section class="flex flex-col justify-center min-h-screen min-w-full" id='achieving'>
 		<div class="flex max-h-[80%] border-y-2 border-black">
 			<div class='flex flex-col min-w-[50%] bg-yagmi-blue border-r-2 border-black pl-20 pr-40 text-white'>
 				<h2 class="font-chromate text-6xl mt-12">Achieving <h2 class="font-chromate text-6xl mt-5">more together</h2></h2></h2>
@@ -43,7 +42,7 @@ import { Icon } from 'astro-icon'
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col w-full max-w-[80%] min-h-screen items-center justify-evenly relative text-white">
+	<section class="flex flex-col w-full max-w-[80%] min-h-screen items-center justify-evenly text-white">
 		<h2 class="font-chromate text-6xl">DAOs we work with!</h2>
 		<div class="flex items-center justify-evenly w-full">
 			<IconBox symbol="?" title="Lorem Ipsum"/>
@@ -54,23 +53,36 @@ import { Icon } from 'astro-icon'
 		</div>
 		<Button href="/#signup" styles='px-10 py-2'>Sign up with your DAO</Button>
 	</section>
-	<section class="flex items-center justify-center w-full min-h-screen relative bg-yagmi-yellow p-[10%]">
-		<Card styles="bg-white mr-[1%]" title="01">
-			<span class="font-semibold">Select</span> a reputable DAO you're familiar with
-		</Card>
-		<Card styles="bg-white mr-[1%]" title="02">
-			<span class="font-semibold">Review</span> the loan terms offered by their champion
-		</Card>
-		<Card styles="bg-white mr-[1%]" title="03">
+	<section class="flex flex-col items-center w-full min-h-screen bg-yagmi-yellow p-[10%] relative">
+		<div class="absolute top-0 right-0">
+			<svg width="595" height="372" viewBox="0 0 595 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M619.475 -189.652C688.502 -137.752 765.833 -99.3459 817.214 -30.838C868.595 37.67 894.026 135.242 866 214.13C837.974 292.499 755.972 352.184 673.97 367.235C592.487 382.805 510.485 354.26 439.901 339.209C369.317 323.639 309.632 322.082 231.263 305.474C152.375 289.385 54.2837 258.245 17.9537 195.965C-17.8573 133.685 8.0927 39.7461 39.7517 -50.5599C71.9297 -140.866 109.817 -227.02 175.73 -279.439C241.124 -332.377 335.063 -351.061 412.394 -328.225C489.725 -305.908 550.448 -241.033 619.475 -189.652Z" fill="white" fill-opacity="0.28"/>
+			</svg>
+		</div>
+		<div class='absolute bottom-0 left-0'>
+			<svg width="584" height="170" viewBox="0 0 584 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M325.475 148.348C394.502 200.248 471.833 238.654 523.214 307.162C574.595 375.67 600.026 473.242 572 552.13C543.974 630.499 461.972 690.184 379.97 705.235C298.487 720.805 216.485 692.26 145.901 677.209C75.3167 661.639 15.6317 660.082 -62.7373 643.474C-141.625 627.385 -239.716 596.245 -276.046 533.965C-311.857 471.685 -285.907 377.746 -254.248 287.44C-222.07 197.134 -184.183 110.98 -118.27 58.5611C-52.8763 5.62309 41.0627 -13.0609 118.394 9.77509C195.725 32.0921 256.448 96.9671 325.475 148.348Z" fill="white" fill-opacity="0.28"/>
+			</svg>
+		</div>
+		<h2 class="font-chromate text-6xl relative z-10 mb-16">Want to support a champion?</h2>
+		<div class='flex relative z-10'>
+			<Card styles="bg-white mr-[1%]" title="01">
+				<span class="font-semibold">Select</span> a reputable DAO you're familiar with
+			</Card>
+			<Card styles="bg-white mr-[1%]" title="02">
+				<span class="font-semibold">Review</span> the loan terms offered by their champion
+			</Card>
+			<Card styles="bg-white mr-[1%]" title="03">
 			Purchase the desired number of NFTs at a fixed price, and <span class="font-semibold">patiently wait</span>
-		</Card>
-		<Card styles="bg-white" title="04">
+			</Card>
+			<Card styles="bg-white" title="04">
 			Check for available withdrawals, and retrieve your initial investment along with <span class="font-semibold">earned interest</span>
-		</Card>
+			</Card>
+		</div>
 	</section>
-	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen relative" id='signup'>
-		<div class="relative w-full min-h-[70vh] bg-yagmi-blue rounded-lg text-white">
-			<div class="relative flex flex-col items-center justify-evenly min-h-[80vh] py-10">
+	<section class="flex items-center justify-center w-full max-w-[80%] min-h-screen" id='signup'>
+		<div class="w-full min-h-[70vh] bg-yagmi-blue rounded-lg text-white">
+			<div class="flex flex-col items-center justify-evenly min-h-[80vh] py-10">
 				<h2 class="font-chromate text-5xl">Are you a DAO member or contributor?</h2>
 				<p class="font-work-sans text-lg text-center mx-52">While we're currently in alpha and not accepting new organizations, we eagerly anticipate expanding our reach in the future. To qualify, organizations must demonstrate a robust decentralized voting system that rewards exceptional talent within the community. If your organization fosters individual growth through such a system, join our waitlist to stay updated on our progress!</p>
 				<Form client:idle>
@@ -80,11 +92,11 @@ import { Icon } from 'astro-icon'
 			</div>
 		</div>
 	</section>
-	<section class="flex flex-col items-center justify-center w-full max-w-[80%] relative my-[5vh]">
+	<section class="flex flex-col items-center justify-center w-full max-w-[80%] my-[5vh]">
 		<h2 class="font-chromate text-5xl mb-7 text-white">FAQs</h2>	
 		<Accordion client:idle />
 	</section>
-	<section class="flex flex-col w-full relative min-h-[60vh] pt-20">
+	<section class="flex flex-col w-full min-h-[60vh] pt-20">
 		<div class="flex justify-evenly min-h-full bg-yagmi-yellow py-14">
 			<div class="flex flex-col w-full max-w-[20%] p-5">
 				<span class="font-work-sans font-semibold mb-5">Our Mission</span>
