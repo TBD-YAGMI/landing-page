@@ -8,9 +8,10 @@ module.exports = {
 				'work-sans': ['Work Sans', 'sans-serif'],
 			},
 			colors: {
-				neutral: '#F5F5F5',
-				primary: '#FF6F61',
-				accent: '#00A4FF',
+				'yagmi-pink': '#FF97D6',
+				'yagmi-blue': '#3030D0',
+				'yagmi-yellow': '#FFC501',
+				'yagmi-aqua': '#00DEB5',
 			},
 		},
 	},
